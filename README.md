@@ -71,7 +71,7 @@ Production is deployed automatically from `main` on Vercel:
 https://clippy.evanpluchart.fr
 ```
 
-`vercel.json` configures clean URLs, the `/fr` redirect, long-lived asset caching, and security headers. Pull requests are validated by GitHub Actions before they are merged.
+`vercel.json` configures clean URLs, the `/fr` redirect, revalidated mutable assets, and security headers. Versioned CSS and JavaScript URLs prevent a previous production response from surviving a release change. Pull requests are validated by GitHub Actions before they are merged.
 
 ## Contributing
 
