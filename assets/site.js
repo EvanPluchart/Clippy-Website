@@ -2,7 +2,6 @@
   "use strict";
 
   const isFrench = document.documentElement.lang === "fr";
-  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const header = document.querySelector("[data-header]");
   const menuButton = document.querySelector("[data-menu-button]");
   const navMenu = document.querySelector("[data-nav-menu]");
@@ -63,19 +62,6 @@
   document.querySelectorAll("[data-year]").forEach((node) => {
     node.textContent = String(new Date().getFullYear());
   });
-
-  if (!reducedMotion && "IntersectionObserver" in window) {
-    document.documentElement.classList.add("motion-ready");
-    const revealObserver = new IntersectionObserver((entries, observer) => {
-      for (const entry of entries) {
-        if (!entry.isIntersecting) continue;
-        entry.target.classList.add("is-visible");
-        observer.unobserve(entry.target);
-      }
-    }, { rootMargin: "0px 0px -45px", threshold: 0.08 });
-
-    document.querySelectorAll(".reveal").forEach((element) => revealObserver.observe(element));
-  }
 
   const downloadButton = document.querySelector("[data-download-button]");
   const downloadLabel = document.querySelector("[data-download-label]");
