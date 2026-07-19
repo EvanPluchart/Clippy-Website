@@ -925,6 +925,52 @@ kbd {
   font-weight: 620;
 }
 
+.availability.is-unsigned {
+  color: #8a5b09;
+  font-weight: 650;
+}
+
+.install-notice {
+  display: grid;
+  max-width: 920px;
+  grid-template-columns: 30px minmax(0, 1fr);
+  align-items: start;
+  gap: 13px;
+  margin: 20px auto 0;
+  padding: 17px 19px;
+  color: var(--ink-soft);
+  border: 1px solid rgba(178, 119, 15, 0.24);
+  border-radius: 17px;
+  background: rgba(255, 184, 59, 0.09);
+  font-size: 13px;
+  line-height: 1.58;
+  text-align: left;
+}
+
+.install-notice-icon {
+  display: grid;
+  width: 30px;
+  height: 30px;
+  place-items: center;
+  color: #7c5000;
+  border-radius: 50%;
+  background: rgba(255, 184, 59, 0.23);
+  font-weight: 780;
+}
+
+.install-notice p {
+  margin: 2px 0 0;
+}
+
+.install-notice strong {
+  color: var(--ink);
+}
+
+.install-notice a {
+  color: var(--purple);
+  font-weight: 650;
+}
+
 .command-box {
   display: grid;
   width: 100%;
@@ -1661,6 +1707,20 @@ kbd {
 
   .install-card.featured {
     background: linear-gradient(180deg, rgba(88, 68, 187, 0.15), #211e27 48%);
+  }
+
+  .availability.is-unsigned {
+    color: #f0bc5d;
+  }
+
+  .install-notice {
+    border-color: rgba(255, 190, 78, 0.22);
+    background: rgba(255, 184, 59, 0.08);
+  }
+
+  .install-notice-icon {
+    color: #ffd489;
+    background: rgba(255, 184, 59, 0.16);
   }
 
   .step-number {

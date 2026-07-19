@@ -11,16 +11,16 @@
   const copy = {
     downloadReady: (version) => isFrench ? `Télécharger Clippy ${version}` : `Download Clippy ${version}`,
     downloadStatus: (size) => isFrench
-      ? `DMG signé et notarifié · ${size}`
-      : `Signed and notarized DMG · ${size}`,
+      ? `Sans signature Developer ID · ${size}`
+      : `Not Developer ID signed · ${size}`,
     commandCopied: isFrench ? "Commande Homebrew copiée" : "Homebrew command copied",
     commandFailed: isFrench ? "Impossible de copier automatiquement" : "Could not copy automatically",
     brewReady: isFrench
       ? "Le Cask Homebrew est disponible."
       : "The Homebrew Cask is available.",
     notReady: isFrench
-      ? "Le téléchargement direct sera activé avec la première release signée."
-      : "Direct download will activate with the first signed release.",
+      ? "Le téléchargement direct sera activé dès la publication du DMG."
+      : "Direct download will activate as soon as the DMG is published.",
   };
 
   const showToast = (message) => {
@@ -104,7 +104,7 @@
       downloadButton.classList.remove("is-disabled");
       downloadLabel.textContent = copy.downloadReady(version);
       downloadStatus.textContent = copy.downloadStatus(formatBytes(Number(dmg.size)));
-      downloadStatus.classList.add("is-ready");
+      downloadStatus.classList.add("is-unsigned");
     } catch {
       // The static fallback remains accurate when GitHub is unavailable.
     }

@@ -61,7 +61,7 @@ The Homebrew command becomes copyable only when the public Cask exists at:
 EvanPluchart/homebrew-tap/Casks/clippy.rb
 ```
 
-This prevents the website from presenting broken or unsafe installation paths before a signed and notarized release is available.
+This prevents the website from presenting broken installation paths before the release artifacts exist. The current free build is explicitly identified as not Apple Developer ID signed or notarized, and both language versions link to Apple’s first-launch instructions.
 
 ## Deployment
 
