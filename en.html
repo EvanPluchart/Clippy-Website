@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Clippy — Clipboard history for macOS</title>
+    <meta name="description" content="Find, search, and paste everything you copy on macOS. Clippy is fast, local, open source, and always one ⇧⌘V away.">
+    <meta name="theme-color" content="#f5f3ff">
+    <meta name="color-scheme" content="light dark">
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="https://clippy.evanpluchart.fr/en">
+    <link rel="alternate" hreflang="fr" href="https://clippy.evanpluchart.fr/">
+    <link rel="alternate" hreflang="en" href="https://clippy.evanpluchart.fr/en">
+    <link rel="alternate" hreflang="x-default" href="https://clippy.evanpluchart.fr/">
+    <link rel="icon" type="image/png" href="/assets/favicon.png">
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="preload" href="/assets/quick-panel-en.jpg" as="image" type="image/jpeg">
+    <link rel="stylesheet" href="/assets/styles.css">
+
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="fr_FR">
+    <meta property="og:title" content="Clippy — Clipboard history for macOS">
+    <meta property="og:description" content="Everything you copy, one ⇧⌘V away. Fast, local, and open source.">
+    <meta property="og:url" content="https://clippy.evanpluchart.fr/en">
+    <meta property="og:image" content="https://clippy.evanpluchart.fr/assets/history-en.jpg">
+    <meta property="og:image:alt" content="Clipboard history in Clippy">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Clippy for macOS">
+    <meta name="twitter:description" content="Everything you copy, one ⇧⌘V away.">
+    <meta name="twitter:image" content="https://clippy.evanpluchart.fr/assets/history-en.jpg">
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Skip to content</a>
+
+    <header class="site-header" data-header>
+      <nav class="nav shell" aria-label="Main navigation">
+        <a class="brand" href="/en" aria-label="Clippy, home">
+          <img src="/assets/app-icon.png" width="38" height="38" alt="">
+          <span>Clippy</span>
+        </a>
+
+        <button class="menu-button" type="button" aria-expanded="false" aria-controls="nav-menu" data-menu-button>
+          <span class="sr-only">Open menu</span>
+          <span></span><span></span>
+        </button>
+
+        <div class="nav-menu" id="nav-menu" data-nav-menu>
+          <a href="#features">Features</a>
+          <a href="#privacy">Privacy</a>
+          <a href="#install">Install</a>
+          <a href="#questions">FAQ</a>
+          <a class="language-link" href="/" lang="fr" hreflang="fr" aria-label="Lire en français">FR</a>
+          <a class="nav-github" href="https://github.com/EvanPluchart/Clippy" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="content">
+      <section class="hero shell">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="status-dot"></span> Built natively for macOS</div>
+          <h1>Your clipboard.<br><span>Finally supercharged.</span></h1>
+          <p class="hero-lead">Find, search, and paste anything you copied in an instant. Without leaving your keyboard—and without sending your data anywhere.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#install">
+              Install Clippy
+              <span aria-hidden="true">↓</span>
+            </a>
+            <a class="button button-secondary" href="https://github.com/EvanPluchart/Clippy" rel="noreferrer">
+              View source
+              <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+          <p class="hero-note">Free and open source · Requires macOS 14 or later</p>
+        </div>
+
+        <div class="hero-visual">
+          <div class="shortcut-orbit" aria-label="Shift Command V keyboard shortcut">
+            <kbd>⇧</kbd><kbd>⌘</kbd><kbd>V</kbd>
+          </div>
+          <div class="app-stage">
+            <div class="glow glow-one"></div>
+            <div class="glow glow-two"></div>
+            <img class="hero-icon" src="/assets/app-icon.png" width="116" height="116" alt="Clippy app icon">
+            <div class="window-frame panel-frame">
+              <div class="window-bar" aria-hidden="true"><i></i><i></i><i></i></div>
+              <img src="/assets/quick-panel-en.jpg" width="640" height="620" alt="Clippy quick panel showing recent clipboard items" fetchpriority="high">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="trust-strip" aria-label="Compatibility">
+        <div class="shell trust-items">
+          <div><span aria-hidden="true">⌘</span><strong>macOS 14+</strong></div>
+          <div><span aria-hidden="true">◈</span><strong>Apple Silicon + Intel</strong></div>
+          <div><span aria-hidden="true">⌂</span><strong>100% local</strong></div>
+          <div><span aria-hidden="true">◇</span><strong>English + Français</strong></div>
+        </div>
+      </section>
+
+      <section class="section shell" id="features">
+        <div class="section-heading reveal">
+          <p class="kicker">One move. That’s it.</p>
+          <h2>Keep your workflow<br>in the flow.</h2>
+          <p>Clippy stays out of sight until you need it, then appears exactly when it should.</p>
+        </div>
+
+        <div class="steps">
+          <article class="step-card reveal">
+            <span class="step-number">01</span>
+            <div class="step-icon" aria-hidden="true">⌘C</div>
+            <h3>Copy as usual</h3>
+            <p>Text, links, images, or files: Clippy quietly remembers your clipboard history.</p>
+          </article>
+          <article class="step-card reveal" data-delay="1">
+            <span class="step-number">02</span>
+            <div class="step-icon keys" aria-hidden="true"><kbd>⇧</kbd><kbd>⌘</kbd><kbd>V</kbd></div>
+            <h3>Open the panel</h3>
+            <p>The global shortcut reveals your clips without opening a large window on your desktop.</p>
+          </article>
+          <article class="step-card reveal" data-delay="2">
+            <span class="step-number">03</span>
+            <div class="step-icon" aria-hidden="true">↵</div>
+            <h3>Choose it. Paste it.</h3>
+            <p>Navigate from the keyboard, press Return, and continue exactly where you left off.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section showcase shell">
+        <article class="feature-row">
+          <div class="feature-copy reveal">
+            <p class="kicker">Always within reach</p>
+            <h2>A lightweight panel, not another distraction.</h2>
+            <p>The quick panel opens near your pointer or at the center of the screen. Search, use the arrow keys, and paste without switching apps.</p>
+            <ul class="check-list">
+              <li>Complete keyboard navigation</li>
+              <li>Previews for text, links, images, and files</li>
+              <li>Favorites and one-step deletion</li>
+            </ul>
+          </div>
+          <div class="visual-card purple reveal" data-delay="1">
+            <img src="/assets/quick-panel-en.jpg" width="640" height="620" loading="lazy" alt="Clippy quick panel in English">
+          </div>
+        </article>
+
+        <article class="feature-row reverse">
+          <div class="feature-copy reveal">
+            <p class="kicker">Find anything</p>
+            <h2>A clear history, even as it grows.</h2>
+            <p>Filter by type, pin important items, and keep storage tidy with retention limits you control.</p>
+            <ul class="check-list">
+              <li>Instant search</li>
+              <li>Content type filters</li>
+              <li>Configurable storage and retention</li>
+            </ul>
+          </div>
+          <div class="visual-card blue reveal" data-delay="1">
+            <img src="/assets/history-en.jpg" width="994" height="768" loading="lazy" alt="Clippy history window in English">
+          </div>
+        </article>
+
+        <article class="feature-row">
+          <div class="feature-copy reveal">
+            <p class="kicker">Make it yours</p>
+            <h2>Useful settings, without the maze.</h2>
+            <p>Choose paste behavior, appearance, shortcut, and retention from simple native settings pages.</p>
+            <ul class="check-list">
+              <li>Launch automatically with macOS</li>
+              <li>Customizable global shortcut</li>
+              <li>Light, dark, or system appearance</li>
+            </ul>
+          </div>
+          <div class="visual-card lilac reveal" data-delay="1">
+            <img src="/assets/settings-en.jpg" width="700" height="704" loading="lazy" alt="Clippy general settings in English">
+          </div>
+        </article>
+      </section>
+
+      <section class="privacy-section" id="privacy">
+        <div class="shell privacy-grid">
+          <div class="privacy-copy reveal">
+            <p class="kicker">Local by design</p>
+            <h2>Your clipboard stays<br>on your Mac.</h2>
+            <p>A clipboard can hold personal things. Clippy stores its history locally and gives you control over what remains there.</p>
+            <a class="text-link light-link" href="https://github.com/EvanPluchart/Clippy" rel="noreferrer">Verify the source code <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="privacy-points">
+            <article class="privacy-card reveal">
+              <span class="privacy-icon" aria-hidden="true">⌂</span>
+              <div>
+                <h3>No account</h3>
+                <p>Install, launch, and use it. No sign-up or mandatory cloud sync.</p>
+              </div>
+            </article>
+            <article class="privacy-card reveal" data-delay="1">
+              <span class="privacy-icon" aria-hidden="true">◎</span>
+              <div>
+                <h3>No tracking</h3>
+                <p>No advertising analytics, profiling, or clipboard content sent to a server.</p>
+              </div>
+            </article>
+            <article class="privacy-card reveal" data-delay="2">
+              <span class="privacy-icon" aria-hidden="true">⌫</span>
+              <div>
+                <h3>Delete at any time</h3>
+                <p>Remove one item or your entire history directly from the app.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section install-section shell" id="install">
+        <div class="section-heading centered reveal">
+          <p class="kicker">Ready when you are</p>
+          <h2>Install Clippy.</h2>
+          <p>Pick the method that works for you. Both install the same open-source app.</p>
+        </div>
+
+        <div class="install-grid">
+          <article class="install-card featured reveal">
+            <span class="recommendation">Recommended</span>
+            <img src="/assets/app-icon.png" width="76" height="76" alt="">
+            <h3>Direct download</h3>
+            <p>For everyone. Open the DMG, then drag Clippy into your Applications folder.</p>
+            <a class="button button-primary button-full is-disabled" href="https://github.com/EvanPluchart/Clippy/releases" aria-disabled="true" data-download-button>
+              <span data-download-label>Download coming soon</span>
+              <span aria-hidden="true">↓</span>
+            </a>
+            <p class="availability" role="status" data-download-status>The signed and notarized release is being prepared.</p>
+          </article>
+
+          <article class="install-card reveal" data-delay="1">
+            <div class="terminal-icon" aria-hidden="true">&gt;_</div>
+            <h3>Homebrew</h3>
+            <p>For Terminal users. Install and update from one command.</p>
+            <div class="command-box">
+              <code>brew install --cask EvanPluchart/tap/clippy</code>
+              <button type="button" aria-label="Copy Homebrew command" disabled data-copy-command>
+                <span data-copy-icon aria-hidden="true">□</span>
+              </button>
+            </div>
+            <p class="availability" role="status" data-brew-status>The Cask will become available with the first signed release.</p>
+          </article>
+        </div>
+
+        <p class="source-note reveal">Prefer to build it yourself? <a href="https://github.com/EvanPluchart/Clippy#build-from-source" rel="noreferrer">Find the instructions on GitHub <span aria-hidden="true">↗</span></a></p>
+      </section>
+
+      <section class="section faq shell" id="questions">
+        <div class="faq-intro reveal">
+          <p class="kicker">Frequently asked questions</p>
+          <h2>The details that matter.</h2>
+          <p>Still have a question? <a href="https://github.com/EvanPluchart/Clippy/issues" rel="noreferrer">Open an issue on GitHub</a>.</p>
+        </div>
+        <div class="faq-list">
+          <details class="reveal">
+            <summary>Is Clippy free? <span aria-hidden="true">+</span></summary>
+            <p>Yes. Clippy is free and released under the MIT License. Anyone can inspect, audit, and improve its source code.</p>
+          </details>
+          <details class="reveal">
+            <summary>Why does Clippy ask for Accessibility permission? <span aria-hidden="true">+</span></summary>
+            <p>It lets Clippy send the paste shortcut to the app you were using after you select an item. Clipboard monitoring and search remain local.</p>
+          </details>
+          <details class="reveal">
+            <summary>Which macOS versions are supported? <span aria-hidden="true">+</span></summary>
+            <p>Clippy requires macOS 14 Sonoma or later. It is designed for both Apple Silicon and Intel Macs.</p>
+          </details>
+          <details class="reveal">
+            <summary>Does Clippy send my clipboard over the Internet? <span aria-hidden="true">+</span></summary>
+            <p>No. Your history is stored on your Mac. This website only checks GitHub when it loads to offer the latest available release.</p>
+          </details>
+        </div>
+      </section>
+
+      <section class="final-cta shell reveal">
+        <div>
+          <img src="/assets/app-icon.png" width="92" height="92" alt="">
+          <p class="kicker">A better copy and paste</p>
+          <h2>What you were looking for<br>is already in Clippy.</h2>
+          <a class="button button-primary" href="#install">Install Clippy <span aria-hidden="true">↓</span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="shell footer-grid">
+        <div>
+          <a class="brand" href="/en">
+            <img src="/assets/app-icon.png" width="34" height="34" alt="">
+            <span>Clippy</span>
+          </a>
+          <p>A simple, fast, and privacy-friendly clipboard history for macOS.</p>
+        </div>
+        <div class="footer-links">
+          <div>
+            <strong>Product</strong>
+            <a href="#features">Features</a>
+            <a href="#install">Install</a>
+            <a href="#questions">FAQ</a>
+          </div>
+          <div>
+            <strong>Project</strong>
+            <a href="https://github.com/EvanPluchart/Clippy" rel="noreferrer">GitHub</a>
+            <a href="https://github.com/EvanPluchart/Clippy/releases" rel="noreferrer">Releases</a>
+            <a href="https://github.com/EvanPluchart/Clippy/issues" rel="noreferrer">Report an issue</a>
+          </div>
+          <div>
+            <strong>Language</strong>
+            <a href="/" lang="fr" hreflang="fr">Français</a>
+            <a href="/en" aria-current="page">English</a>
+          </div>
+        </div>
+      </div>
+      <div class="shell footer-bottom">
+        <span>© <span data-year>2026</span> Evan Pluchart. MIT License.</span>
+        <span>Made with care for macOS.</span>
+      </div>
+    </footer>
+
+    <div class="toast" role="status" aria-live="polite" data-toast></div>
+    <script src="/assets/site.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "clippy-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Bilingual landing page for Clippy, a local clipboard history app for macOS.",
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "check": "node scripts/validate.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "license": "MIT"
+}

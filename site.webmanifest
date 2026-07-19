@@ -1,0 +1,16 @@
+{
+  "name": "Clippy for macOS",
+  "short_name": "Clippy",
+  "description": "Fast, local, open-source clipboard history for macOS.",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#fbfaff",
+  "theme_color": "#6554e8",
+  "icons": [
+    {
+      "src": "/assets/app-icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
