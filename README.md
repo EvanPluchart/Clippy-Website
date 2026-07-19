@@ -2,6 +2,8 @@
 
 The official bilingual landing page for [Clippy](https://github.com/EvanPluchart/Clippy), a fast, local, open-source clipboard history app for macOS.
 
+**Live website:** [clippy.evanpluchart.fr](https://clippy.evanpluchart.fr)
+
 ## Contents
 
 - [Overview](#overview)
@@ -63,13 +65,13 @@ This prevents the website from presenting broken or unsafe installation paths be
 
 ## Deployment
 
-The production target is Vercel with the custom domain:
+Production is deployed automatically from `main` on Vercel:
 
 ```text
-clippy.evanpluchart.fr
+https://clippy.evanpluchart.fr
 ```
 
-`vercel.json` configures clean URLs, the `/fr` redirect, long-lived asset caching, and security headers.
+`vercel.json` configures clean URLs, the `/fr` redirect, long-lived asset caching, and security headers. Pull requests are validated by GitHub Actions before they are merged.
 
 ## Contributing
 
