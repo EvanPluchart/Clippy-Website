@@ -114,14 +114,16 @@
   const copyButton = document.querySelector("[data-copy-command]");
   const copyIcon = document.querySelector("[data-copy-icon]");
   const brewStatus = document.querySelector("[data-brew-status]");
+  let copyResetTimer;
 
   const copyCommand = async () => {
     try {
       await navigator.clipboard.writeText(command);
-      if (copyIcon) copyIcon.textContent = "✓";
+      if (copyIcon) copyIcon.classList.add("is-copied");
       showToast(copy.commandCopied);
-      window.setTimeout(() => {
-        if (copyIcon) copyIcon.textContent = "□";
+      window.clearTimeout(copyResetTimer);
+      copyResetTimer = window.setTimeout(() => {
+        if (copyIcon) copyIcon.classList.remove("is-copied");
       }, 1800);
     } catch {
       showToast(copy.commandFailed);

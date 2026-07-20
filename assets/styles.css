@@ -1015,6 +1015,42 @@ kbd {
   background: rgba(116, 97, 241, 0.32);
 }
 
+.command-box button:not(:disabled):focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.9);
+  outline-offset: -4px;
+}
+
+.copy-icon {
+  display: grid;
+  width: 20px;
+  height: 20px;
+  margin: auto;
+  place-items: center;
+}
+
+.copy-icon svg {
+  width: 19px;
+  height: 19px;
+  grid-area: 1 / 1;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+  transition: opacity 150ms ease, transform 150ms ease;
+}
+
+.copy-icon-success,
+.copy-icon.is-copied .copy-icon-default {
+  opacity: 0;
+  transform: scale(0.75);
+}
+
+.copy-icon.is-copied .copy-icon-success {
+  opacity: 1;
+  transform: scale(1);
+}
+
 .source-note {
   margin: 30px 0 0;
   color: var(--muted);
