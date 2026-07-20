@@ -36,6 +36,12 @@ for (const page of pages) {
     if (!/<meta\s+name="description"\s+content="[^"]{50,}"/i.test(html)) {
       fail(page.file, "missing useful meta description");
     }
+    if (!html.includes("copy-icon-default") || !html.includes("copy-icon-success")) {
+      fail(page.file, "missing Homebrew copy and success icons");
+    }
+    if (html.includes('data-copy-icon aria-hidden="true">□</span>')) {
+      fail(page.file, "contains the placeholder Homebrew copy icon");
+    }
   }
 
   for (const match of html.matchAll(/<img\b[^>]*>/gi)) {
